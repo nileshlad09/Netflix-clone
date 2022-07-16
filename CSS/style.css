@@ -1,139 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Permanent+Marker&family=Poppins:wght@500&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap');
+/* Netflix Sans,Helvetica Neue,Helvetica,Arial,sans-serif */
 *{
- margin: 0;
- padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-body{
-    background-image: url('1.jpg');
-    background-size: 100vw 665px ;
-    background-repeat:no-repeat ;
+hr{
+    background-color: #222222;
+    height: 10px;
+    border: none;
 }
-.header{
-    margin: 35px;
+/*==============header(.heading) section start=============*/
+.Container_1{
+    background: url('../Image/background.jpg');
+    width: 100%;
+    height: 100vh;
 }
-.class1{
-    float: right;
-    padding: 5px;
+.blurBackground{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.725);
 }
-.class1 select{
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0);
-    color: white ;
-    border-color: white;
-    font-size: 16px;
-    border-width: 2px;
-    border-radius: 4px;
+.Container_1 .heading{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
 }
-.class1 select option{
+.Container_1 .heading .logo img{
+  width: 140px;
+}
+.Container_1 .heading .signInBtn{
+    display: flex;
+    column-gap: 20px;
+}
+.selectOption select,
+.Container_1 .heading .signInBtn button{
+    width: 90px;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+.selectOption{
+    color: white;
+    border: 1px solid white;
+    padding:0 10px;
+    width: 140px;
+}
+.selectOption select option{
     background-color: gray;
-    border-style: none;
-}
-.class1 button{
+    font-size: 1rem;
     padding: 10px;
-    margin-left: 15px;
-    background-color: rgb(245, 17, 17);
-    font-size: 16px;
-    color: white;
-    width: 86px;
-    border-style: none;
-    border-radius: 5px;
-    pointer-events: auto;
- }
+}
+.Container_1 .heading .signInBtn button{
+    background-color: #E50914;
+    cursor: pointer;
+}
+/*==============header(.heading) section End=============*/
 
-.class2{
+/*==============introContainer section start=============*/
+.Container_1 .introContainer{
+    margin: 100px auto;
+    color: white;
+    width: 900px;
     text-align: center;
-    margin-top: 150px;
 }
-.class2 h3{
-    font-size: 45px;
-    margin-bottom: 4px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+.introContainer h2{
+    font-size: 3.5rem;
+    padding: 0 200px;
+    line-height: 65px;
 }
-.class2 h4{
-    font-size:25px ;
-    margin: 20px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+.introContainer h3{
+    font-size: 1.9rem;
+    font-weight: 300;
 }
-.class2 p{
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+.introContainer p{
+  font-size: 1.4rem;
+  margin: 35px 0 20px 0;
 }
-.class3{
+.introContainer .emailForm{
     display: flex;
     justify-content: center;
-    margin-top: 15px;
 }
-
-.class3 input{
-    width: 450px;
-    height: 60px;
-    padding-left: 10px;
-    font-size:20px ;
+.introContainer input{
+   width: 500px;
+   height: 55px;
+   padding-left: 16px;
+   outline: none;
 }
-
-.class3 input::placeholder{
-font-size: 17px;
-}
-.class3 button{
-    background-color: red;
-    border-style: none;
-    border-radius: 1px;
+.introContainer button{
+    height: 55px;
     width: 200px;
+    background-color: #E50914;
     color: white;
-    font-size: 25px;
-    padding: 5px;
-}
-button:hover{
+    border: none;
+    font-size: 1.5rem;
     cursor: pointer;
-    background-color:rgb(213, 9, 9);
 }
+/*==============introContainer section End=============*/
 
-
-
-
-
-.container1{
-    background-color: black;
-    width: 100vw;
-    height: 500px;
-    margin-top: 130px;
-}
-
-.class4{
-    margin-top: 30px;
-    float: right;
-    }
-.class4 h2{
-    font-size: 45px;
+/*==============container_2 section Start=============*/
+.container_2{
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+    padding-top: 20px;
+    background-color: #000000;
+    /* width: 100vw; */
+    height: 85vh;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 140px 130px 10px 0;
-
+    align-content: center;
+}
+.container_2 h2{
+    font-size: 3.6rem;
+    margin-top: 120px;
+}
+.container_2 p{
+    font-size: 1.8rem;
+    margin-top: 9px;
+}
+.container_2 .ad_1{
+    grid-column: 2/7;
+}
+.container_2 .ad_2{
+    grid-column: 8/13;
+}
+.container_2  img{
+    width: 500px;
 }
 
-.container2,.container4,.container3{
-    background-color: black;
-    width: 100vw;
-    height: 500px;
+.video1{
+    position: relative;
 }
 
-.class6,.class10,.class8{
-    float: right;
+.video1 video{
+    position: absolute;
+    right: 132px;
+    top: 78px;
+    width: 365px;
+    z-index: 1;
 }
-.class6 h2,.class10 h2,.class8 h2{
-    font-size: 45px;
+/*==============container_2 section End=============*/
+/*==============container_3 section Start=============*/
+.container_3{
+    display: grid;
+    align-content: center;
+    grid-template-columns:repeat(12,1fr);
+    padding-top: 20px;
+    background-color: #000000;
+    /* width: 100vw; */
+    height: 85vh;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 140px 130px 10px 0;
+    position: relative;
 }
-.class6 p,.class10 p,.class8 p,.class4 p{
-    font-size: 25px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 12px 130px 0 0;
+.container_3 h2{
+    font-size: 3.6rem;
+    margin-top: 100px;
+}
+.container_3 p{
+    font-size: 1.8rem;
+    margin-top: 9px;
+}
+.container_3 .ad_1{
+    grid-column: 2/7;
+}
+.container_3 .ad_2{
+    grid-column: 7/12;
+}
+.container_3  img{
+    width: 500px;
+}
+
+.box{
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    border: 2px solid #404040;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:6px 10px;
+    background-color: #000000;
+    width: 310px;
+    border-radius: 10px;
+}
+.box .movie_name{
+    display: flex;
+    align-items: center;
+}
+.box img{
+    width: 50px;
+}
+.box .downloading{
+    padding-left: 20px;
+}
+.box .downloading h3{
+    margin: 0;
     padding: 0;
 }
+.box .downloading p{
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    font-size: 2px;
+    color: blue;
+}
+/*==============container_3 section End=============*/
+
+/*==============frequntly ask question section Start=============*/
+.frequentlyQuestion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px auto;
+    background-color: #000000;
+    color: white;
+    padding-bottom: 90px;
+}
+.frequentlyQuestion h2{
+  margin: 50px 0 40px 0;
+  font-size: 3.6rem;
+}
+.frequentlyQuestion .questions-ans{
+    /* background-color: #303030; */
+    width: 900px;
+    margin-bottom: 10px;
+}
+.frequentlyQuestion .questions-ans .question{
+    background-color: #303030;
+    font-size: 2rem;
+    padding: 15px 55px;
+    height:65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.frequentlyQuestion .questions-ans .question i{
+    font-size: 3rem;
+}
+.frequentlyQuestion .questions-ans .answer{
+    padding: 15px;
+    display: none;
+}
+
+/*==============frequntly ask question section End=============*/
+
+/*==============footer section start=============*/
+.footer{
+    background-color: #000000;
+    color: white;
+    padding:50px 200px;
+    color: #616A6F;
+    font-size: 1.2rem;
+}
+.footer p{
+    padding: 30px 0;
+}
+.footer a{
+    color: #616A6F;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 50px 0;
+}
+.footer ul a{
+    width: 25%;
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+/*==============footer section End=============*/
 
