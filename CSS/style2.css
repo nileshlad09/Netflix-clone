@@ -1,0 +1,121 @@
+
+
+@media  screen and (max-width:700px) {
+     .header img{ 
+         width: 100px; 
+     } 
+    .class1 select{
+        padding: 4px;
+        font-size: 14px;
+    }
+    .class1 button{
+        padding: 8px;
+        margin-left: 8px;
+        font-size: 13px; 
+        width: 60px;
+     }
+    .class2 h3{
+        font-size: 30px;
+        }
+    .class2 h4{
+        font-size:15px ;
+        }
+    .class2 p{
+        font-size: 12px;
+        }
+
+    .class3 input{
+        width: 300px;
+        height: 30px;
+        padding-left: 10px;
+        font-size:15px ;
+    }
+    .class3 input::placeholder{
+        font-size: 13px;
+        }
+    .class3 button{
+        width: 80px;
+        font-size: 11px;
+        padding: 3px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and ( max-width:910px) {
+
+
+    .container1,.container2,.container4,.container3{
+       
+        height: 400px;
+    }
+    
+   .class4,.class6,.class10,.class8{
+       text-align: center;
+        margin-left: 60px;
+       
+    }
+    .class4 h2,.class6 h2,.class10 h2,.class8 h2{
+        font-size: 20px;
+        margin-top: 40px;
+        text-align: center;
+ }
+    .class6 p,.class10 p,.class8 p,.class4 p{
+        font-size: 14px;
+        text-align: center;
+     
+    }
+    .class5 img,.class7 img,.class9 img,.class11 img{
+        display: flex;
+        width:250px;
+        margin: auto;
+    }
+}
+
+    
+
+ @media  screen and (min-width:911px) and (max-width:1300px) {
+
+
+    .container1,.container2,.container4,.container3{
+       
+        height: 300px;
+    }
+    
+   .class4,.class6,.class10,.class8{
+        text-align: center;
+        padding-right: 50px;
+       ;
+        
+    }
+    .class4 h2,.class6 h2,.class10 h2,.class8 h2{
+        margin-top: 15px;
+        font-size: 25px;
+        
+ }
+    .class6 p,.class10 p,.class8 p,.class4 p{
+        font-size: 17px;
+        
+     
+    }
+    .class7 img,.class9 img,.class11 img{
+       
+        display: flex;
+        width:300px;
+        margin: auto;
+    } 
+    .class5 img{
+        display: flex;
+        width:300px;
+        margin: auto;
+    }
+}
