@@ -11,16 +11,19 @@ hr{
     height: 10px;
     border: none;
 }
+body{
+    background-color: #000000;
+}
 /*==============header(.heading) section start=============*/
 .Container_1{
-    background: url('../Image/background.jpg');
+    background: url('../Image/background.jpg') no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 614px;
 }
 .blurBackground{
     width: 100%;
-    height: 100vh;
     background-color: rgba(0, 0, 0, 0.725);
+    height: 100%;
 }
 .Container_1 .heading{
     height: 90px;
@@ -67,12 +70,13 @@ hr{
 .Container_1 .introContainer{
     margin: 100px auto;
     color: white;
-    width: 900px;
     text-align: center;
+    max-width: 900px;
+    min-width: 300px;
 }
 .introContainer h2{
     font-size: 3.5rem;
-    padding: 0 200px;
+    padding: 0 130px;
     line-height: 65px;
 }
 .introContainer h3{
@@ -82,16 +86,21 @@ hr{
 .introContainer p{
   font-size: 1.4rem;
   margin: 35px 0 20px 0;
+  /* margin: 35px 34px 20px 34px; */
+  text-align: center;
 }
 .introContainer .emailForm{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .introContainer input{
-   width: 500px;
-   height: 55px;
-   padding-left: 16px;
-   outline: none;
+    /* width: 500px; */
+    width: 50%;
+    height: 55px;
+    padding-left: 16px;
+    outline: none;
+    margin-bottom: 25px;
 }
 .introContainer button{
     height: 55px;
@@ -108,10 +117,9 @@ hr{
 .container_2{
     display: grid;
     grid-template-columns:repeat(12,1fr);
-    padding-top: 20px;
-    background-color: #000000;
-    /* width: 100vw; */
-    height: 85vh;
+    padding: 50px 0;
+    width: 100%;
+    background-color: transparent;
     color: white;
     align-content: center;
 }
@@ -136,13 +144,22 @@ hr{
 .video1{
     position: relative;
 }
-
 .video1 video{
     position: absolute;
     right: 132px;
     top: 78px;
     width: 365px;
-    z-index: 1;
+    z-index: -1;
+}
+.video2{
+    position: relative;
+}
+.video2 video{
+    position: absolute;
+    right: 163px;
+    top: 45px;
+    width: 310px;
+    z-index: -1;
 }
 /*==============container_2 section End=============*/
 /*==============container_3 section Start=============*/
@@ -150,10 +167,8 @@ hr{
     display: grid;
     align-content: center;
     grid-template-columns:repeat(12,1fr);
-    padding-top: 20px;
     background-color: #000000;
-    /* width: 100vw; */
-    height: 85vh;
+    padding: 50px 0;
     color: white;
     position: relative;
 }
@@ -214,13 +229,11 @@ hr{
 /*==============frequntly ask question section Start=============*/
 .frequentlyQuestion{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px auto;
     background-color: #000000;
     color: white;
-    padding-bottom: 90px;
+    margin-bottom: 80px
 }
 .frequentlyQuestion h2{
   margin: 50px 0 40px 0;
@@ -245,8 +258,21 @@ hr{
 }
 .frequentlyQuestion .questions-ans .answer{
     padding: 15px;
+    background-color: #303030;
+    margin-top: 1px;
+    font-size: 1.7rem;
+    padding: 40px 55px;
     display: none;
 }
+.frequentlyQuestion .questions-ans.active .answer{
+    display: block;
+}
+.frequentlyQuestion .questions-ans.active .fa-plus{
+    transform: rotate(45deg);
+    transition: .2s;
+}
+
+
 
 /*==============frequntly ask question section End=============*/
 
