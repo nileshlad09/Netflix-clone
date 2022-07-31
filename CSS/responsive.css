@@ -36,6 +36,12 @@
         font-size: 1.5rem;
         padding: 15px 12px;
     }
+    .footer{
+        padding: 50px 30px;
+    }
+    .footer ul{
+        gap: 20px;
+    }
     
 }
 @media screen and (max-width:1200px){
@@ -48,5 +54,8 @@
     .container_3 .ad_2,
     .container_2 .ad_1 {
         width: 100%;
+    }
+    .footer{
+        padding: 50px 100px;
     }
 }
