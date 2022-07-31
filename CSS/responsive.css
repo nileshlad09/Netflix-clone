@@ -1,0 +1,52 @@
+@media screen and (max-width:700px) {
+    .introContainer h2 {
+        font-size: 2.5rem;
+        padding: 0 0px;
+        line-height: 35px;
+    }
+    .introContainer input {
+        width: 93%;
+        margin-bottom: 10px;
+    }
+    .container_3 img, 
+    .container_2 img {
+        width: 350px;
+    }
+    .container_3 .ad_2,
+    .container_2 .ad_1 {
+        width: 500px;
+        text-align: center;
+    }
+    .container_3 h2,
+    .container_2 h2{
+        font-size: 2.5rem;
+    }
+    .container_3 p ,
+    .container_2 p {
+        font-size: 1.5rem;
+    }
+    .frequentlyQuestion .questions-ans {
+        width: 95%;
+    }
+    .frequentlyQuestion h2 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .frequentlyQuestion .questions-ans .question {
+        font-size: 1.5rem;
+        padding: 15px 12px;
+    }
+    
+}
+@media screen and (max-width:1200px){
+    .container_3,
+    .container_2{
+        text-align: center;
+    }
+    .container_3 .ad_1,
+    .container_2 .ad_2,
+    .container_3 .ad_2,
+    .container_2 .ad_1 {
+        width: 100%;
+    }
+}

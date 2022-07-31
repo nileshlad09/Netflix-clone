@@ -6,19 +6,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-hr{
-    background-color: #222222;
-    height: 10px;
-    border: none;
-}
 body{
     background-color: #000000;
+}
+.line{
+    height: 6px;
+    width: 100%;
+    background-color: #222222;
 }
 /*==============header(.heading) section start=============*/
 .Container_1{
     background: url('../Image/background.jpg') no-repeat;
-    width: 100%;
     height: 614px;
+    background-size: auto;
 }
 .blurBackground{
     width: 100%;
@@ -28,9 +28,10 @@ body{
 .Container_1 .heading{
     height: 90px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+    justify-content: space-between;
+    padding: 5px 20px;
+    flex-wrap: wrap;
 }
 .Container_1 .heading .logo img{
   width: 140px;
@@ -115,114 +116,56 @@ body{
 
 /*==============container_2 section Start=============*/
 .container_2{
-    display: grid;
-    grid-template-columns:repeat(12,1fr);
-    padding: 50px 0;
-    width: 100%;
-    background-color: transparent;
-    color: white;
-    align-content: center;
-}
-.container_2 h2{
-    font-size: 3.6rem;
-    margin-top: 120px;
-}
-.container_2 p{
-    font-size: 1.8rem;
-    margin-top: 9px;
-}
-.container_2 .ad_1{
-    grid-column: 2/7;
-}
-.container_2 .ad_2{
-    grid-column: 8/13;
-}
-.container_2  img{
-    width: 500px;
-}
-
-.video1{
-    position: relative;
-}
-.video1 video{
-    position: absolute;
-    right: 132px;
-    top: 78px;
-    width: 365px;
-    z-index: -1;
-}
-.video2{
-    position: relative;
-}
-.video2 video{
-    position: absolute;
-    right: 163px;
-    top: 45px;
-    width: 310px;
-    z-index: -1;
-}
-/*==============container_2 section End=============*/
-/*==============container_3 section Start=============*/
-.container_3{
-    display: grid;
-    align-content: center;
-    grid-template-columns:repeat(12,1fr);
-    background-color: #000000;
-    padding: 50px 0;
-    color: white;
-    position: relative;
-}
-.container_3 h2{
-    font-size: 3.6rem;
-    margin-top: 100px;
-}
-.container_3 p{
-    font-size: 1.8rem;
-    margin-top: 9px;
-}
-.container_3 .ad_1{
-    grid-column: 2/7;
-}
-.container_3 .ad_2{
-    grid-column: 7/12;
-}
-.container_3  img{
-    width: 500px;
-}
-
-.box{
-    position: absolute;
-    bottom: 100px;
-    left: 200px;
-    border: 2px solid #404040;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:6px 10px;
-    background-color: #000000;
-    width: 310px;
-    border-radius: 10px;
+    padding: 30px 0;
+    flex-wrap: wrap;
 }
-.box .movie_name{
+.container_2 .ad_1{
+    width: 600px;
+}
+.container_2 h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.container_2 p{
+    font-size: 1.9rem;
+    color: white;
+    line-height: 28px;
+    padding-top: 10px;
+}
+.container_2 img{
+    width: 500px;
+}
+/*==============container_2 section End=============*/
+
+
+/*==============container_3 section Start=============*/
+.container_3{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    flex-wrap: wrap-reverse;
 }
-.box img{
-    width: 50px;
+.container_3 .ad_2{
+    width: 600px;
 }
-.box .downloading{
-    padding-left: 20px;
+.container_3 h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
 }
-.box .downloading h3{
-    margin: 0;
-    padding: 0;
+.container_3 p{
+    font-size: 1.9rem;
+    color: white;
+    line-height: 28px;
+    padding-top: 10px;
 }
-.box .downloading p{
-    margin: 0;
-    padding: 0;
-    line-height: 18px;
-    font-size: 2px;
-    color: blue;
+.container_3 img{
+    width: 500px;
 }
 /*==============container_3 section End=============*/
 
@@ -241,7 +184,7 @@ body{
 }
 .frequentlyQuestion .questions-ans{
     /* background-color: #303030; */
-    width: 900px;
+    width: 90%;
     margin-bottom: 10px;
 }
 .frequentlyQuestion .questions-ans .question{
